@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="studentSettingsPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.student.StudentSettingsController">
+   <children>
+      <AnchorPane prefHeight="444.0" prefWidth="846.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="46.0" prefWidth="846.0" style="-fx-background-color: #44e795;" textFill="#383c3a">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="btnClose" fitHeight="70.0" fitWidth="44.0" layoutX="802.0" layoutY="1.0" onMouseClicked="#closeOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons8_Close_Window_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnMinimize" fitHeight="70.0" fitWidth="44.0" layoutX="758.0" layoutY="1.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons8_Minimize_Window_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="44.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons8_Settings_48px.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtSStuId" labelFloat="true" layoutX="62.0" layoutY="96.0" onAction="#searchStudentOnAction" prefHeight="26.0" prefWidth="315.0" promptText="StudentId" />
+            <JFXTextField fx:id="txtSStuNIC" labelFloat="true" layoutX="61.0" layoutY="239.0" onAction="#sStuNICOnAction" prefHeight="26.0" prefWidth="315.0" promptText="NIC:" />
+            <JFXTextField fx:id="txtSStuName" labelFloat="true" layoutX="61.0" layoutY="167.0" onAction="#sStuNameOnAction" prefHeight="26.0" prefWidth="315.0" promptText="Name:" />
+            <Label alignment="CENTER" layoutX="51.0" prefHeight="46.0" prefWidth="247.0" text="STUDENT SETTINGS" textFill="#383c3a">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnUpdateStudent" layoutX="501.0" layoutY="289.0" mnemonicParsing="false" onAction="#updateStudentOnAction" prefHeight="34.0" prefWidth="198.0" style="-fx-background-color: #05c1e2;" text="Update" textFill="#010101" />
+            <JFXTextField fx:id="txtSSTpNo" labelFloat="true" layoutX="61.0" layoutY="324.0" onAction="#sSTpNoOnAction" prefHeight="26.0" prefWidth="315.0" promptText="Contact No:" />
+            <ImageView fx:id="btnMinimize1" fitHeight="70.0" fitWidth="44.0" layoutX="377.0" layoutY="87.0" onMouseClicked="#minimizeOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons8_Search_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnHome" fitHeight="70.0" fitWidth="44.0" layoutX="750.0" layoutY="350.0" onMouseClicked="#homeOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons8_Home_48px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="viewStuPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.admin.StudentsController">
+   <children>
+      <AnchorPane layoutX="2.0" prefHeight="777.0" prefWidth="1250.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="93.0" layoutY="55.0" prefHeight="34.0" prefWidth="185.0" text="STUDENTS">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutX="86.0" layoutY="92.0" prefHeight="2.0" prefWidth="198.0" />
+            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="50.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/student.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tblViewStudents" layoutX="63.0" layoutY="146.0" prefHeight="448.0" prefWidth="1104.0">
+               <columns>
+                  <TableColumn prefWidth="207.99998092651367" text="Student Id" />
+                  <TableColumn prefWidth="388.7999572753906" text="Student Name" />
+                  <TableColumn prefWidth="252.79998779296875" text="NIC" />
+                  <TableColumn prefWidth="256.79998779296875" text="Contact No" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
